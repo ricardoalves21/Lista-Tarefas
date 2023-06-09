@@ -1,0 +1,11 @@
+<section class="container">
+  <header class="header d-flex">
+    <h2 class="ff-inter">MURAL DE TAREFAS</h2>
+    <button routerLink="/criarTarefa" class="botao">Adicionar tarefa</button>
+  </header>
+  <div class="mural">
+    <div *ngFor="let tarefa of listaTarefas">
+      <app-tarefa [tarefa]="tarefa"></app-tarefa>
+    </div>
+  </div>
+</section>

@@ -4,20 +4,19 @@ footer {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas:
-    "TextoCopyright LogoRodape";
+  grid-template-areas: "LogoRodape TextoCopyright";
   align-items: center;
   padding: 1rem 5rem;
   justify-items: end;
 }
 
 .TextoCopyright {
-  justify-self: left;
+  justify-self: right;
   grid-area: TextoCopyright;
 }
 
 .LogoRodape {
-  justify-self: center;
+  justify-self: left;
   grid-area: LogoRodape;
 }
 

@@ -4,11 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.7rem;
+  padding: 0.2rem 2rem 0.2rem 2rem;
 }
 
 .cabecalho .logo {
-  width: 40%;
+  width: 35%;
   padding: 1rem 1.5rem;
 }
 
@@ -24,7 +24,7 @@
 
 .cabecalho p {
   font-size: 1rem;
-  color: #2e7f8f;
+  color: #154580;
 }
 
 @media (max-width: 576px) {
