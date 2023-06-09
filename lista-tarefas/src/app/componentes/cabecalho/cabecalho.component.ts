@@ -5,11 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './cabecalho.component.html',
   styleUrls: ['./cabecalho.component.css']
 })
+
 export class CabecalhoComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }
