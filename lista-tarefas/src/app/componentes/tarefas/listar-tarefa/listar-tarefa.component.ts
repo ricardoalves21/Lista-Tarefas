@@ -1,3 +1,4 @@
+import { Tarefa } from './../tarefa';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,18 +10,10 @@ import { Component, OnInit } from '@angular/core';
 //Classe ListarTarefaComponent
 export class ListarTarefaComponent implements OnInit {
   //O atributo 'listaTarefas' é um componente pai, por isso ele fornece as informações para o componente filho 'tarefa'
-  listaTarefas = [
-    {
-      conteudo: 'Passo informações para o componente filho',
-      responsavel: 'Componente pai',
-      etapa: 'etapa3',
-    },
-    {
-      conteudo: 'Minha propriedade é decorada com @Input()',
-      responsavel: 'Componente filho',
-      etapa: 'etapa2',
-    },
-  ];
+  //O 'listaTarefas' tambem precisa seguir o mesmo tipo definido na interface 'Tarefa'
+  //A nossa listaTarefas carregará os objetos que irão popular nosso banco de dados
+  //Esta listaTarefas virá do nosso backend
+  listaTarefas: Tarefa[] = [];
 
   constructor() {}
 
