@@ -1,0 +1,22 @@
+{
+  "tarefas": [
+    {
+      "id": 1,
+      "conteudo": "Aula de reforço para Elias",
+      "responsavel": "Ricardo",
+      "etapa": "etapa1"
+    },
+    {
+      "id": 2,
+      "conteudo": "Estudar para prova de matemática",
+      "responsavel": "Elias",
+      "etapa": "etapa2"
+    },
+    {
+      "id": 3,
+      "conteudo": "Finalizar solicitação da bolsa escolar",
+      "responsavel": "Ricardo",
+      "etapa": "etapa3"
+    }
+  ]
+}

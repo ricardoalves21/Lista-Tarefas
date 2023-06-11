@@ -1,4 +1,4 @@
-<div class="tarefa {{ tarefa.etapa }} ff-roboto-mono tarefa-p">
+<div class="tarefa {{ tarefa.etapa }} ff-roboto-mono" [ngClass]="larguraTarefa()">
   <img src="../../../../assets/imagens/{{ tarefa.etapa }}.png" alt="Icone da etapa">
   <p class="conteudo">{{ tarefa.conteudo }}</p>
   <p class="responsavel"><b>{{ tarefa.responsavel }}</b></p>

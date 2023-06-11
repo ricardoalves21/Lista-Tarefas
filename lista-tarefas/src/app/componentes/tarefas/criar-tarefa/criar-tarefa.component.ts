@@ -1,3 +1,4 @@
+import { Tarefa } from './../tarefa';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 //
 export class CriarTarefaComponent implements OnInit {
   //Objeto tarefa
-  tarefa = {
+  //O objeto 'tarefa' precisa ser tipado com a interface definida em Tarefa'
+  //Lembrando que o objeto precisa conter TODOS os atributos definidos em sua interfa (tipo escolhido para este objeto)
+
+  tarefa: Tarefa = {
     id: 1,
     conteudo: 'Aula de reforço Elias',
     responsavel: 'Ricardo',
