@@ -1,3 +1,4 @@
+import { TarefaService } from './../tarefa.service';
 import { Tarefa } from './../tarefa';
 import { Component, OnInit } from '@angular/core';
 
@@ -15,7 +16,9 @@ export class ListarTarefaComponent implements OnInit {
   //Esta listaTarefas virá do nosso backend
   listaTarefas: Tarefa[] = [];
 
-  constructor() {}
+  constructor(private service: TarefaService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.service.listar();
+  }
 }

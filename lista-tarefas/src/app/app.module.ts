@@ -8,6 +8,7 @@ import { CriarTarefaComponent } from './componentes/tarefas/criar-tarefa/criar-t
 import { FormsModule } from '@angular/forms';
 import { ListarTarefaComponent } from './componentes/tarefas/listar-tarefa/listar-tarefa.component';
 import { TarefaComponent } from './componentes/tarefas/tarefa/tarefa.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { TarefaComponent } from './componentes/tarefas/tarefa/tarefa.component';
     ListarTarefaComponent,
     TarefaComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
