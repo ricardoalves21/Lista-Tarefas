@@ -1,5 +1,5 @@
 export interface Tarefa {
-  id: number;
+  id?: number;
   conteudo: string;
   responsavel: string;
   etapa: string;
