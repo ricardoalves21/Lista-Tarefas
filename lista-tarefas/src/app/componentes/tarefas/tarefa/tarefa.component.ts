@@ -9,8 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TarefaComponent implements OnInit {
   //O componente 'tarefa' é filho, por isso é decorado com @Input()
   //A variável 'tarefa' precisa ser tipada com o modelo definido na interface 'tarefa.ts'
-  //Agora o contrato precisa ser seguido à risca, por isso o objeto precisa conter TODOS os atributos definidos na interface
-
+  //Agora, o contrato precisa ser seguido à risca, por isso o objeto precisa conter TODOS os atributos definidos na interface
   @Input()
   tarefa: Tarefa = {
     id: 0,

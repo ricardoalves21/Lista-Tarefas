@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { TarefaService } from '../tarefa.service';
 import { Tarefa } from './../tarefa';
 import { Component, OnInit } from '@angular/core';
 
@@ -13,21 +15,22 @@ export class CriarTarefaComponent implements OnInit {
   //Lembrando que o objeto precisa conter TODOS os atributos definidos em sua interfa (tipo escolhido para este objeto)
 
   tarefa: Tarefa = {
-    id: 1,
-    conteudo: 'Aula de reforço Elias',
-    responsavel: 'Ricardo',
+    conteudo: '',
+    responsavel: '',
     etapa: 'etapa1',
   };
 
-  constructor() {}
+  constructor(private service: TarefaService, private router: Router) {}
 
   ngOnInit(): void {}
 
   criarTarefa() {
-    alert('Nova tarefa criada');
+    this.service.criar(this.tarefa).subscribe(() => {
+      this.router.navigate(['/listarTarefa']);
+    });
   }
 
   cancelarTarefa() {
-    alert('Tarefa cancelada');
+    this.router.navigate(['/listarTarefa']);
   }
 }
