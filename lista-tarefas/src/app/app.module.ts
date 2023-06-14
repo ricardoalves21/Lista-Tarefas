@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { ListarTarefaComponent } from './componentes/tarefas/listar-tarefa/listar-tarefa.component';
 import { TarefaComponent } from './componentes/tarefas/tarefa/tarefa.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ExcluirTarefaComponent } from './componentes/tarefas/excluir-tarefa/excluir-tarefa.component';
+import { EditarTarefaComponent } from './componentes/tarefas/editar-tarefa/editar-tarefa.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     CriarTarefaComponent,
     ListarTarefaComponent,
     TarefaComponent,
+    ExcluirTarefaComponent,
+    EditarTarefaComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

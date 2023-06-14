@@ -2,8 +2,8 @@
   "tarefas": [
     {
       "id": 1,
-      "conteudo": "Aula de reforço para Elias",
-      "responsavel": "Ricardo",
+      "conteudo": "Aula de reforço para Elias URGENTE",
+      "responsavel": "Ricardo Alves",
       "etapa": "etapa1"
     },
     {
@@ -17,24 +17,6 @@
       "conteudo": "Finalizar solicitação da bolsa escolar",
       "responsavel": "Ricardo",
       "etapa": "etapa3"
-    },
-    {
-      "conteudo": "Teste de tarefa",
-      "responsavel": "Ricardo Teste",
-      "etapa": "etapa3",
-      "id": 4
-    },
-    {
-      "conteudo": "Teste de tarefa 2",
-      "responsavel": "Teste Ricardo",
-      "etapa": "etapa2",
-      "id": 5
-    },
-    {
-      "conteudo": "Teste de tarefa 3",
-      "responsavel": "Ricardo",
-      "etapa": "etapa1",
-      "id": 6
     }
   ]
 }
